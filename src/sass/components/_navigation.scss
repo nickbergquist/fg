@@ -1,0 +1,45 @@
+.navbar {
+  .container {
+    padding: 0 35px;
+  }
+}
+
+.navbar-brand {
+  background: url($background-logo) no-repeat;
+  height: $background-logo-height;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -999em;
+  width: $background-logo-width;
+}
+
+.navbar-nav {
+  > li {
+    > a {
+      color: $nav-main-text-color;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: transparent;
+        color: $nav-alt-text-color;
+      }
+    }
+  }
+
+  & .nav-active {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+
+    &::after {
+      background-color: $nav-main-text-color;
+      bottom: 10px;
+      content: '';
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, 0);
+      width: 70%;
+    }
+  }
+}

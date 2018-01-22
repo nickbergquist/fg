@@ -1,0 +1,68 @@
+body {
+  background-color: $background-colour;
+}
+
+header {
+  padding-top: 2rem;
+}
+
+h1 {
+  color: $main-text-colour;
+}
+
+h2 {
+  color: $secondary-text-colour;
+
+  .offer-best & {
+    color: $accent-colour;
+  }
+}
+
+.container {
+  outline: 1px dotted orange;
+}
+
+.jumbotron {
+  background-color: $background-colour;
+  padding-bottom: 0;
+}
+
+.offer {
+  background-color: $foreground-colour;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .offer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1% 2rem;
+    padding: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .row {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.skip {
+  &:active {
+    position: static;
+  }
+
+  &:focus {
+    position: static;
+  }
+}

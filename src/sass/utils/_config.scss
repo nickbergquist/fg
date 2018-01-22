@@ -1,0 +1,46 @@
+//////////////
+//  fonts   //
+//////////////
+
+$fonts: (
+  base-sans-serif: (
+    name: 'Asap-Regular',
+    family: 'Asap, sans-serif',
+    path: '../../type/Asap-Regular',
+    size-proportional: 100%,
+    size-root: 16px,
+    line-height: 1.5,
+    typographical-base-unit: 24px // 16 * 1.5
+  ),
+  heading-sans-serif: (
+    name: 'Montserrat-Bold',
+    family: 'Montserrat-Bold, sans-serif',
+    path: '../../type/Montserrat-Bold',
+  )
+);
+
+////////////////
+//  palette   //
+////////////////
+
+$palettes: (
+  mono: (
+    darkest: #000,
+    darker: #333,
+    dark: #666,
+    mid: #999,
+    light: #ccc,
+    lighter: #eee,
+    offwhite: #fafafa,
+    lightest: #fff,
+  ),
+  main: (
+    primary: #fff,
+    secondary: #0089fe,
+    tertiary: #000,
+    background: #0089fe,
+    foreground: #fff,
+    accent: #f4c900,
+  )
+);
+  

@@ -1,0 +1,45 @@
+
+///////////////
+//  images   //
+///////////////
+
+$background-logo: '../../images/Logo_48_ww.svg' !default;
+$background-logo-height: 48px;
+$background-logo-width: 134px;
+
+
+////////////////
+//  palette   //
+////////////////
+
+$palette-main: main !default;
+$palette-mono: mono;
+
+$main-text-colour: palette-colour($palette-main, 'primary') !default;
+$secondary-text-colour: palette-colour($palette-main, 'secondary') !default;
+$tertiary-text-colour: palette-colour($palette-main, 'tertiary') !default;
+$background-colour: palette-colour($palette-main, 'background') !default;
+$foreground-colour: palette-colour($palette-main, 'foreground') !default;
+$accent-colour: palette-colour($palette-main, 'accent') !default;
+
+$nav-main-text-color: palette-colour($palette-main, 'primary') !default;
+$nav-alt-text-color: palette-colour($palette-mono, 'dark') !default;
+
+
+//////////////////////
+//  typographical   //
+//////////////////////
+
+$base-type: base-sans-serif !default;
+$base-type-name: map-get(map-get($fonts, $base-type), name);
+$base-type-path: map-get(map-get($fonts, $base-type), path);
+$base-font-family: map-get(map-get($fonts, $base-type), family);
+$base-font-proportional-size: map-get(map-get($fonts, $base-type), size-proportional);
+$base-root-font-size: map-get(map-get($fonts, $base-type), size-root);
+$base-line-height: map-get(map-get($fonts, $base-type), line-height);
+$base-typographical-height-unit: map-get(map-get($fonts, $base-type), typographical-base-unit);
+
+$heading-type: heading-sans-serif !default;
+$heading-type-name: map-get(map-get($fonts, $heading-type), name);
+$heading-type-path: map-get(map-get($fonts, $heading-type), path);
+$heading-font-family: map-get(map-get($fonts, $heading-type), family);

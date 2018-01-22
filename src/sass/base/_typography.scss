@@ -1,0 +1,13 @@
+
+@include font-face($base-type-name, $base-type-path);
+@include font-face($heading-type-name, $heading-type-path);
+
+body {
+  font-family: #{$base-font-family};
+  font-size: calc-rem($base-root-font-size)#{'rem'};
+  line-height: $base-line-height;
+}
+
+html {
+  font-size: $base-font-proportional-size;
+}
